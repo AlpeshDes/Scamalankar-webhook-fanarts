@@ -73,8 +73,8 @@ async function getPosts(url) {
         await Yuki.send(embed1);
     });
 };
-
+console.log("done")
 setInterval(() => {
     getPosts(url)
-  }, 30000);
+  }, 3000);
   
