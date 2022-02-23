@@ -2,9 +2,9 @@ const fs = require('fs');
 const axios = require('axios');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 
-const Yuki = new Webhook("https://discord.com/api/webhooks/945904249051680768/rWIMorhmK0LHB7XgKXmfVKKTxnlfZcvvKrLDYKpH4ySrVugiBlXPMCzD9CWtGPWNGx-D");
+const Yuki = new Webhook("https://discord.com/api/webhooks/946074857848844352/7xHUDs-PlIDMCDJ8K_eQXwFg_j6Gsn2EMfS57XBK1GuUw4wDvQ0MKmBtvxQr-d8EWu9v");
 
-const reporter = "816516388473929758"
+const reporter = "565813536119324682"
 
 const subreddits = "Animewallpaper+pantsu+awwnime+WaifusOnCouch+AnimeWallpaperNSFW+AnimeWallpapersSFW+silverhair+Moescape+animehotbeverages+MoeStash"
 
