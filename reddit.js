@@ -2,11 +2,11 @@ const fs = require('fs');
 const axios = require('axios');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 
-const Yuki = new Webhook("https://discord.com/api/webhooks/946446458901639178/bJzwmQ2nUM62N-KVXOt93V0VqsHAUfUVMMRHALY_IIBLdRGyldBGCoa0Ke5G_Ub2T7Zz");
+const Onishio = new Webhook("https://discord.com/api/webhooks/946074857848844352/7xHUDs-PlIDMCDJ8K_eQXwFg_j6Gsn2EMfS57XBK1GuUw4wDvQ0MKmBtvxQr-d8EWu9v");
 
 const reporter = "565813536119324682"
 
-const subreddits = "Animewallpaper+phonewallpapers+wallpaper+WallpapersAndroid"
+const subreddits = "Animewallpaper+pantsu+awwnime+WaifusOnCouch+AnimeWallpaperNSFW+AnimeWallpapersSFW+silverhair+Moescape+animehotbeverages+MoeStash"
 
 const url = `https://www.reddit.com/r/${subreddits}/new/.json`
 
@@ -43,7 +43,7 @@ async function getPosts(url) {
                     .setTimestamp();
                     (async () => {
                         try {
-                            await Yuki.send(embed);
+                            await Onishio.send(embed);
                             console.log("Embed sent");
                         }
                         catch(e){
@@ -65,16 +65,16 @@ async function getPosts(url) {
         const embed = new MessageBuilder()
         .setColor("#FFC0CB")
         .setDescription(`Dead-chwan! A request to Reddit failed with the following error: \`${e}\`\n\nWould you have Neel-chwan take a look when he's free to see if it's a regular error or something else? p-pwease? >.<`)
-        await Yuki.send(`<@${reporter}>`);
-        await Yuki.send(embed);
+        await Onishio.send(`<@${reporter}>`);
+        await Onishio.send(embed);
         const embed1 = new MessageBuilder()
         .setColor("#FFC0CB")
         .setDescription("Skipped the last request and continued the process with no errors...")
-        await Yuki.send(embed1);
+        await Onishio.send(embed1);
     });
 };
-console.log("done")
+console.log("Done!");
 setInterval(() => {
     getPosts(url)
-  }, 3000);
+  }, 30000);
   
