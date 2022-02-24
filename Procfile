@@ -1,1 +1,1 @@
-worker = node reddit.js
+worker : node reddit.js
