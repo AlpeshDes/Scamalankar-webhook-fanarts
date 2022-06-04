@@ -2,7 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const { Webhook, MessageBuilder } = require('discord-webhook-node');
 
-const Onishio = new Webhook("https://discord.com/api/webhooks/946074857848844352/7xHUDs-PlIDMCDJ8K_eQXwFg_j6Gsn2EMfS57XBK1GuUw4wDvQ0MKmBtvxQr-d8EWu9v");
+const Onishio = new Webhook("https://discord.com/api/webhooks/982293648421027870/uMc2iGXgT9-9UG2GHhYIa3i5I_9RnwgAQkJcjca83hDHWo0wP3If5uhduA8GZAJ22vQ4");
 
 const reporter = "816516388473929758"
 
